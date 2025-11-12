@@ -3,23 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Killua-Bot IA | Tu Asistente Inteligente para WhatsApp</title>
-  <meta name="description" content="Killua-Bot IA es tu asistente inteligente de WhatsApp con funciones avanzadas de automatización, inteligencia artificial y personalización total." />
-  <meta name="keywords" content="Killua Bot, WhatsApp Bot, inteligencia artificial, asistente virtual, automatización, IA anime, Killua-Bot IA" />
-  <meta property="og:title" content="Killua-Bot IA ⚡ | Asistente Inteligente para WhatsApp" />
-  <meta property="og:description" content="Automatiza, responde y sorprende con Killua-Bot IA — tu asistente más rápido y con estilo anime ⚡." />
+  <title>⚡ Killua-Bot IA | El Asistente Anime más Poderoso de WhatsApp</title>
+  <meta name="description" content="Killua-Bot IA combina velocidad, inteligencia artificial y estilo anime para automatizar tus chats de WhatsApp con energía eléctrica y poder visual.">
   <meta property="og:image" content="https://cdn.russellxz.click/6cc6dc86.jpeg" />
-  <meta property="og:type" content="website" />
   <meta name="theme-color" content="#38bdf8" />
 
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Fuentes y Tailwind -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at 20% 20%, #0f172a 0%, #020617 100%);
+      color: #fff;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, .font-anime {
+      font-family: 'Orbitron', sans-serif;
+      letter-spacing: 1px;
+    }
+
+    .glow {
+      text-shadow: 0 0 15px #38bdf8;
+    }
+
+    .card {
+      background: rgba(15, 23, 42, 0.8);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: #38bdf8;
+      transform: translateY(-5px) scale(1.03);
+      box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
+    }
+
+    .btn-glow {
+      background: linear-gradient(90deg, #38bdf8, #06b6d4);
+      box-shadow: 0 0 15px rgba(56, 189, 248, 0.6);
+      transition: 0.3s;
+    }
+
+    .btn-glow:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(56, 189, 248, 1);
+    }
+
+    .hero {
+      background: url('https://cdn.russellxz.click/6cc6dc86.jpeg') no-repeat center/cover;
+      background-attachment: fixed;
+      position: relative;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+
+    .fade-in {
+      animation: fadeIn 1s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; transform: translateY(0); }
+      from { opacity: 0; transform: translateY(30px); }
+    }
+  </style>
 </head>
 
-<body class="bg-gray-900 text-white font-sans">
-  <header class="bg-gray-800 shadow-lg sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 py-5 flex justify-between items-center">
-      <h1 class="text-2xl font-bold text-[#38bdf8]">⚡ Killua-Bot IA</h1>
-      <nav class="space-x-6 text-gray-300">
+<body>
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 w-full bg-gray-900/70 backdrop-blur-md border-b border-[#38bdf8]/30 z-50">
+    <div class="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-anime text-[#38bdf8] glow">⚡ Killua-Bot IA</h1>
+      <nav class="space-x-6 text-gray-300 hidden sm:block">
         <a href="#features" class="hover:text-[#38bdf8]">Funciones</a>
         <a href="#planes" class="hover:text-[#38bdf8]">Planes</a>
         <a href="#contacto" class="hover:text-[#38bdf8]">Contacto</a>
@@ -27,100 +97,34 @@
     </div>
   </header>
 
-  <main>
-    <section class="text-center py-20 bg-gradient-to-b from-gray-900 to-gray-800">
-      <h2 class="text-4xl sm:text-5xl font-extrabold text-[#38bdf8] mb-4">Tu Asistente Inteligente de WhatsApp</h2>
-      <p class="text-gray-300 max-w-2xl mx-auto mb-8">Killua-Bot IA combina inteligencia artificial, velocidad y estilo anime ⚡ para automatizar tus chats, gestionar grupos y mucho más.</p>
-      <img src="https://cdn.russellxz.click/6cc6dc86.jpeg" alt="Killua-Bot IA" class="mx-auto rounded-lg shadow-2xl w-72 sm:w-96 mb-8" />
-      <a href="#planes" class="bg-[#38bdf8] hover:bg-[#0ea5e9] text-white font-bold py-3 px-8 rounded-lg shadow-lg transition">Ver Planes</a>
-    </section>
+  <!-- HERO -->
+  <section class="hero h-screen flex flex-col justify-center items-center text-center px-6">
+    <div class="hero-content fade-in">
+      <h2 class="text-5xl sm:text-6xl font-anime font-extrabold text-[#38bdf8] glow mb-4">Killua-Bot IA</h2>
+      <p class="text-gray-200 max-w-2xl mx-auto text-lg mb-8">Tu asistente anime ⚡ con poder de inteligencia artificial. Automatiza, responde, crea y domina WhatsApp con estilo Killua.</p>
+      <a href="#planes" class="btn-glow py-3 px-8 rounded-full font-bold text-white text-lg">🔥 Ver Planes</a>
+    </div>
+  </section>
 
-    <section id="features" class="py-16 bg-gray-900">
-      <div class="max-w-6xl mx-auto px-6 text-center">
-        <h3 class="text-3xl font-semibold text-[#38bdf8] mb-8">⚙️ Características Destacadas</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h4 class="text-xl font-bold mb-2">🤖 Inteligencia Avanzada</h4>
-            <p class="text-gray-400">Killua-Bot responde con IA contextual, aprende de tus conversaciones y mejora cada día.</p>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h4 class="text-xl font-bold mb-2">⚡ Velocidad Extrema</h4>
-            <p class="text-gray-400">Respuestas instantáneas, comandos fluidos y rendimiento optimizado 24/7.</p>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h4 class="text-xl font-bold mb-2">🎨 Personalización Total</h4>
-            <p class="text-gray-400">Crea menús, mensajes, estilos y funciones a tu medida. ¡Hazlo único como tú!</p>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h4 class="text-xl font-bold mb-2">🔒 Seguridad Premium</h4>
-            <p class="text-gray-400">Protección avanzada contra spam, bloqueo automático y control de grupos.</p>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h4 class="text-xl font-bold mb-2">🌐 Multiplataforma</h4>
-            <p class="text-gray-400">Funciona en cualquier dispositivo con conexión a Internet. Simple y eficiente.</p>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-            <h4 class="text-xl font-bold mb-2">💬 Soporte y Actualizaciones</h4>
-            <p class="text-gray-400">Recibe soporte técnico personalizado y nuevas funciones cada semana.</p>
-          </div>
-        </div>
+  <!-- FEATURES -->
+  <section id="features" class="py-20 text-center max-w-6xl mx-auto px-6">
+    <h3 class="text-3xl font-anime text-[#38bdf8] glow mb-10">⚙️ Características Killua Mode</h3>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      <div class="card p-6 rounded-xl fade-in">
+        <h4 class="text-xl font-semibold mb-2 text-[#38bdf8]">⚡ Inteligencia Anime</h4>
+        <p class="text-gray-300">Combina el ingenio de Killua con respuestas IA que aprenden de cada conversación.</p>
       </div>
-    </section>
-
-    <section id="planes" class="py-20 bg-gray-800">
-      <div class="max-w-6xl mx-auto px-6 text-center">
-        <h3 class="text-3xl font-semibold text-[#38bdf8] mb-10">💎 Planes Disponibles</h3>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
-          <div class="bg-gray-900 p-8 rounded-lg shadow-xl border border-gray-700 hover:border-[#38bdf8] transition">
-            <h4 class="text-2xl font-bold mb-4 text-[#38bdf8]">Plan Básico</h4>
-            <p class="text-gray-400 mb-6">Ideal para uso personal o grupos pequeños.</p>
-            <p class="text-4xl font-bold mb-6">L. 150<span class="text-lg text-gray-400"> / mes</span></p>
-            <ul class="text-gray-300 space-y-2 mb-6">
-              <li>✔️ Acceso a funciones básicas</li>
-              <li>✔️ Soporte vía WhatsApp</li>
-              <li>❌ Sin personalización avanzada</li>
-            </ul>
-            <a href="#contacto" class="bg-[#38bdf8] hover:bg-[#0ea5e9] text-white font-bold py-2 px-6 rounded-lg transition">Adquirir</a>
-          </div>
-
-          <div class="bg-gray-900 p-8 rounded-lg shadow-xl border border-[#38bdf8] scale-105">
-            <h4 class="text-2xl font-bold mb-4 text-[#38bdf8]">Plan Premium</h4>
-            <p class="text-gray-400 mb-6">Para usuarios exigentes que quieren el máximo poder del bot.</p>
-            <p class="text-4xl font-bold mb-6">L. 300<span class="text-lg text-gray-400"> / mes</span></p>
-            <ul class="text-gray-300 space-y-2 mb-6">
-              <li>✔️ Todas las funciones desbloqueadas</li>
-              <li>✔️ Respuestas con IA avanzada</li>
-              <li>✔️ Soporte prioritario</li>
-              <li>✔️ Personalización del menú</li>
-            </ul>
-            <a href="#contacto" class="bg-[#38bdf8] hover:bg-[#0ea5e9] text-white font-bold py-2 px-6 rounded-lg transition">Adquirir</a>
-          </div>
-
-          <div class="bg-gray-900 p-8 rounded-lg shadow-xl border border-gray-700 hover:border-[#38bdf8] transition">
-            <h4 class="text-2xl font-bold mb-4 text-[#38bdf8]">Plan Empresarial</h4>
-            <p class="text-gray-400 mb-6">Ideal para negocios, comunidades o creadores de contenido.</p>
-            <p class="text-4xl font-bold mb-6">L. 500<span class="text-lg text-gray-400"> / mes</span></p>
-            <ul class="text-gray-300 space-y-2 mb-6">
-              <li>✔️ Integraciones exclusivas</li>
-              <li>✔️ Multiusuarios y subbots</li>
-              <li>✔️ Soporte técnico 24/7</li>
-              <li>✔️ Branding personalizado</li>
-            </ul>
-            <a href="#contacto" class="bg-[#38bdf8] hover:bg-[#0ea5e9] text-white font-bold py-2 px-6 rounded-lg transition">Adquirir</a>
-          </div>
-        </div>
+      <div class="card p-6 rounded-xl fade-in">
+        <h4 class="text-xl font-semibold mb-2 text-[#38bdf8]">🎨 Personalidad Única</h4>
+        <p class="text-gray-300">Configura la voz, estilo y emociones de tu bot. Tu Killua puede ser formal, divertido o salvaje.</p>
       </div>
-    </section>
-
-    <section id="contacto" class="py-16 bg-gray-900 text-center">
-      <h3 class="text-3xl font-semibold text-[#38bdf8] mb-6">📩 Contáctanos</h3>
-      <p class="text-gray-300 mb-8">¿Listo para obtener tu propio Killua-Bot IA? Escríbenos a nuestro WhatsApp oficial:</p>
-      <a href="https://wa.me/50400000000?text=Hola,%20quiero%20mi%20Killua-Bot%20IA" class="bg-[#38bdf8] hover:bg-[#0ea5e9] text-white font-bold py-3 px-8 rounded-lg shadow-lg transition">Hablar por WhatsApp</a>
-    </section>
-  </main>
-
-  <footer class="bg-gray-800 text-center py-6 text-gray-400">
-    <p>© 2025 Killua-Bot IA ⚡ | Desarrollado por Hélder Onan Posadas</p>
-  </footer>
-</body>
-</html>
+      <div class="card p-6 rounded-xl fade-in">
+        <h4 class="text-xl font-semibold mb-2 text-[#38bdf8]">🌌 Visuales Premium</h4>
+        <p class="text-gray-300">Integración con imágenes, audios y animaciones. Killua-Bot se ve tan bien como responde.</p>
+      </div>
+      <div class="card p-6 rounded-xl fade-in">
+        <h4 class="text-xl font-semibold mb-2 text-[#38bdf8]">🔒 Seguridad Avanzada</h4>
+        <p class="text-gray-300">Sistema anti-spam, control de usuarios y protección de grupos con precisión IA.</p>
+      </div>
+      <div class="card p-6 rounded-xl fade-in">
+        <h4 class="text-xl font-semibold mb-2 text-[#38bdf8]">🤝 Multiusuarios</h
